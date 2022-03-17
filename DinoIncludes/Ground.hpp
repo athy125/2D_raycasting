@@ -33,3 +33,14 @@ public:
             }
         }
     }
+    void move(float time)
+    {
+        x -= 40 * time;
+        
+        if(x<0)
+        {
+            c=rand()%3;
+            x=s_width;
+        }
+    }
+};
